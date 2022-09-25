@@ -1,0 +1,17 @@
+{% extends 'account/base.html' %}
+
+{% block content %}
+    <div class="text-center">
+        <h2>Home</h2>
+        <p>Hello {{ user.first_name }}!</p>
+        <p>Your Username : {{ user }}</p>
+        <a class="btn btn-dark" href="{% url 'socialaccount_connections' %}">Settings</a><br>
+        <h3>Click at any Programming Languages mentioned below to view their respective GitHub repository </h3><hr>
+
+
+        <a class="btn btn-dark" href="http://127.0.0.1:8000/python/">Python</a>
+        <a class="btn btn-dark" href="http://127.0.0.1:8000/cprog/">C</a>
+        <a class="btn btn-dark" href="http://127.0.0.1:8000/cplusplus/">C++</a>
+        <a class="btn btn-dark" href="http://127.0.0.1:8000/java/">Java</a>
+    </div>
+{% endblock %}
